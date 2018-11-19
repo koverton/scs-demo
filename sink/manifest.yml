@@ -1,0 +1,7 @@
+---
+applications:
+- name: DemoSinkApp
+  memory: 1G
+  path: target/sink-1.0-SNAPSHOT.jar
+  services:
+  - SolaceEventMesh

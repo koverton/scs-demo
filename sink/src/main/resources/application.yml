@@ -1,0 +1,19 @@
+---
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: "newsletter/signup/1.0/email/sent"
+          content-type: "application/json"
+          group: "jimmy"
+solace:
+  java:
+    host: tcp://localhost
+    msgVpn: default
+    clientUsername: default
+    clientPassword: default
+    connectRetries: -1
+    reconnectRetries: -1
+server:
+  port: 8085

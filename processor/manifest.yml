@@ -1,0 +1,7 @@
+---
+applications:
+- name: DemoProcessorApp
+  memory: 1G
+  path: target/processor-1.0-SNAPSHOT.jar
+  services:
+  - SolaceEventMesh

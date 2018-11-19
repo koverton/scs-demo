@@ -1,0 +1,7 @@
+---
+applications:
+- name: DemoSourceApp
+  memory: 1G
+  path: target/source-1.0-SNAPSHOT.jar
+  services:
+  - SolaceEventMesh

@@ -1,0 +1,21 @@
+---
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: "newsletter/signup/1.0/email/sent"
+          content-type: "application/json"
+        input:
+          destination: "newsletter/accounts/1.0/user/signup"
+          content-type: "application/json"
+solace:
+  java:
+    host: tcp://localhost
+    msgVpn: default
+    clientUsername: default
+    clientPassword: default
+    connectRetries: -1
+    reconnectRetries: -1
+server:
+  port: 8087
